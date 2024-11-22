@@ -1,29 +1,114 @@
 /* General */
+*{
+  box-sizing: border-box;
+}
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Outfit", sans-serif;
   margin: 0;
   padding: 0;
   background-color: whitesmoke;
   color: #333;
 }
 
-header {
+header{
   background-color: #05122ee8;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-bottom:inset rgba(235, 233, 233, 0.89) 5px;
 }
 
 main {
-  padding: 20px;
+  padding:20px;
+  text-align: center;
 }
 
-footer {
+/* textos */
+h1{
   text-align: center;
-  padding: 10px;
-  background-color: #05122ee8;
   color: white;
+  }
+    
+h2 {
+    color: #333;
+    font-size: 1.5em;
+  }
+  
+
+/* Enlaces (si decido añadir más adelante) */
+a {
+  color: blue;
+  text-decoration: none;
 }
+
+a:hover {
+  color: darkblue;
+}
+
+/* Menú de navegación */
+.dropdown-menu {
+  position: absolute;
+  top: 20px; /* Alineado con el header */
+  left: 20px;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu-button {
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.menu-button:hover {
+  background-color: #444;
+}
+
+.dropdown-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.dropdown-list li {
+  display: block;
+}
+
+.dropdown-list li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.dropdown-list li a:hover {
+  background-color: #ddd;
+}
+
+/* Mostrar el menú al hacer hover */
+.menu-container:hover .dropdown-list {
+  display: block;
+}
+
 
 /* Juegos */
 .game {
@@ -55,7 +140,7 @@ footer {
   background-color: rgba(230, 169, 159, 0.658);
 }
 
-/* Pseudoclases */
+/* Pseudoclases juegos*/
 .game:hover {
   border-color: #444141;
   transform: scale(1.02);
@@ -66,23 +151,85 @@ footer {
   background-color: #d3d3d3;
 }
 
-/* Títulos */
-h1,
-h2 {
-  text-align: center;
+/* Animes */
+.anime {
+  border: 2px solid #ccc;
+  margin-bottom: 15px;
+  padding: 15px;
+  display: block;
+  border-radius: 8px;
 }
 
-h2 {
-  color: #444;
-  font-size: 1.5em;
+/* Estilos específicos por anime/manga */
+#anime1 {
+  background-color: #36db80be;
 }
 
-/* Enlaces (si decides añadir más adelante) */
-a {
-  color: blue;
-  text-decoration: none;
+#anime2 {
+  background-color: rgba(39, 112, 117, 0.486);
 }
 
-a:hover {
-  color: darkblue;
+#anime3 {
+  background-color:#94cee6;
 }
+
+#anime4 {
+  background-color: #8eeed6b7;
+}
+
+#anime5 {
+  background-color: rgba(230, 169, 159, 0.658);
+}
+
+/* Pseudoclases anime*/
+.anime:hover {
+  border-color: #444141;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.anime:active {
+  background-color: #d3d3d3;
+}
+
+/* Libros */
+.libros {
+  border: 2px solid #ccc;
+  margin-bottom: 15px;
+  padding: 15px;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Estilos específicos por libro */
+#libro1 {
+  background-color: #36db80be;
+}
+
+#libro2 {
+  background-color: rgba(39, 112, 117, 0.486);
+}
+
+#libro3 {
+  background-color:#94cee6;
+}
+
+#libro4 {
+  background-color: #8eeed6b7;
+}
+
+#libro5 {
+  background-color: rgba(230, 169, 159, 0.658);
+}
+
+/* Pseudoclases libros*/
+.libros:hover {
+  border-color: #444141;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.libros:active {
+  background-color: #d3d3d3;
+}
+
