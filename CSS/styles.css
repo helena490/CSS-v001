@@ -18,10 +18,11 @@ header{
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
   border-bottom:inset rgba(235, 233, 233, 0.89) 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 main {
-  padding:20px;
+  padding:2%;
   text-align: center;
 }
 
@@ -39,7 +40,7 @@ h2 {
 
 /* Enlaces (si decido añadir más adelante) */
 a {
-  color: blue;
+  color: rgba(0, 0, 255, 0.884);
   text-decoration: none;
 }
 
@@ -59,7 +60,7 @@ a:hover {
 }
 
 .menu-button {
-  background-color: #333;
+  background-color: #0b1129;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -70,7 +71,7 @@ a:hover {
 }
 
 .menu-button:hover {
-  background-color: #444;
+  background-color: #01186d;
 }
 
 .dropdown-list {
@@ -97,11 +98,14 @@ a:hover {
   padding: 10px 15px;
   text-decoration: none;
   color: #333;
-  font-size: 14px;
+  font-size: 0.9em;
 }
 
 .dropdown-list li a:hover {
   background-color: #ddd;
+  scale: 1.05;
+  border-radius: 5px;
+  box-shadow: 1px 3px 2px rgba(0,0, 0, 0.15);
 }
 
 /* Mostrar el menú al hacer hover */
@@ -111,125 +115,42 @@ a:hover {
 
 
 /* Juegos */
-.game {
-  border: 2px solid #ccc;
+.pasatiempo {
+  border: 2px solid #ddd;
   margin-bottom: 15px;
   padding: 15px;
-  display: block;
+  display:block;
   border-radius: 8px;
+  
 }
 
 /* Estilos específicos por juego */
 #game1 {
-  background-color: #36db80be;
+  background-image:url("IMG/leyenda_zelda.jpg");
+  background-size: contain;
+  margin-top: 15px;
 }
 
-#game2 {
-  background-color: rgba(39, 112, 117, 0.486);
+#pasatiempo2 {
+  background-color: #9aecbf98;
+ }
+
+ #pasatiempo3 {
+  background-color: rgba(39, 112, 117, 0.288);
 }
 
-#game3 {
-  background-color:#94cee6;
+#pasatiempo4 {
+  background-color:#94cde6a4;
 }
 
-#game4 {
-  background-color: #8eeed6b7;
-}
-
-#game5 {
-  background-color: rgba(230, 169, 159, 0.658);
+#pasatiempo5 {
+  background-color: rgba(230, 168, 159, 0.425);
 }
 
 /* Pseudoclases juegos*/
-.game:hover {
-  border-color: #444141;
-  transform: scale(1.02);
+.pasatiempo:hover {
+  border: solid rgba(0,0,0,0.2);
+  transform: scale(1.03);
   transition: all 0.3s ease;
-}
-
-.game:active {
-  background-color: #d3d3d3;
-}
-
-/* Animes */
-.anime {
-  border: 2px solid #ccc;
-  margin-bottom: 15px;
-  padding: 15px;
-  display: block;
-  border-radius: 8px;
-}
-
-/* Estilos específicos por anime/manga */
-#anime1 {
-  background-color: #36db80be;
-}
-
-#anime2 {
-  background-color: rgba(39, 112, 117, 0.486);
-}
-
-#anime3 {
-  background-color:#94cee6;
-}
-
-#anime4 {
-  background-color: #8eeed6b7;
-}
-
-#anime5 {
-  background-color: rgba(230, 169, 159, 0.658);
-}
-
-/* Pseudoclases anime*/
-.anime:hover {
-  border-color: #444141;
-  transform: scale(1.02);
-  transition: all 0.3s ease;
-}
-
-.anime:active {
-  background-color: #d3d3d3;
-}
-
-/* Libros */
-.libros {
-  border: 2px solid #ccc;
-  margin-bottom: 15px;
-  padding: 15px;
-  display: block;
-  border-radius: 8px;
-}
-
-/* Estilos específicos por libro */
-#libro1 {
-  background-color: #36db80be;
-}
-
-#libro2 {
-  background-color: rgba(39, 112, 117, 0.486);
-}
-
-#libro3 {
-  background-color:#94cee6;
-}
-
-#libro4 {
-  background-color: #8eeed6b7;
-}
-
-#libro5 {
-  background-color: rgba(230, 169, 159, 0.658);
-}
-
-/* Pseudoclases libros*/
-.libros:hover {
-  border-color: #444141;
-  transform: scale(1.02);
-  transition: all 0.3s ease;
-}
-
-.libros:active {
-  background-color: #d3d3d3;
 }
 
