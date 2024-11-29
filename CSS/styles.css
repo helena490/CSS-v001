@@ -147,41 +147,41 @@ a:hover {
 }
 
 #game2 {
-  background-image: url('/img/zelda.png'); /* Ruta de la imagen */
+  background-image: url('../img/zelda.png'); /* Ruta de la imagen */
 }
 
 #game3 {
-  background-image: url('/img/hollow_knight.jpg'); /* Ruta de la imagen */
+  background-image: url('../img/hollow_knight.jpg'); /* Ruta de la imagen */
 }
 
 #game4 {
-  background-image: url('/img/smashbros.webp'); /* Ruta de la imagen */
+  background-image: url('../img/smashbros.webp'); /* Ruta de la imagen */
 }
 
 #game5 {
-  background-image: url('/img/totalbattle.jpg'); /* Ruta de la imagen */
+  background-image: url('../img/totalbattle.jpg'); /* Ruta de la imagen */
 }
 
 
 /* Estilos específicos por anime */
 #anime1 {
-  background-image: url('/img/insertarimagen'); /* Ruta de la imagen */
+  background-image: url('../img/insertarimagen'); /* Ruta de la imagen */
 }
 
 #anime2 {
-  background-image: url('/img/slime.jpg'); /* Ruta de la imagen */
+  background-image: url('../img/slime.jpg'); /* Ruta de la imagen */
 }
 
 #anime3 {
-  background-image: url('/img/insertarimagen'); /* Ruta de la imagen */
+  background-image: url('../img/insertarimagen'); /* Ruta de la imagen */
 }
 
 #anime4 {
-  background-image: url('/img/insertarimagen'); /* Ruta de la imagen */
+  background-image: url('../img/insertarimagen'); /* Ruta de la imagen */
 }
 
 #anime5 {
-  background-image: url('/img/insertarimagen'); /* Ruta de la imagen */
+  background-image: url('../img/insertarimagen'); /* Ruta de la imagen */
 }
 
 
