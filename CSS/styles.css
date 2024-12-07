@@ -11,7 +11,10 @@ body {
 }
 
 header {
-  background-color: #05122ee8;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  background-color: #05122e;
   color: white;
   text-align: center;
   padding: 30px;
@@ -87,7 +90,7 @@ a:hover {
   padding: 0;
   border: 1px solid #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  z-index: 10;
   border-radius: 5px;
 }
 
@@ -176,7 +179,7 @@ a:hover {
 
 /* Estilos específicos por anime */
 .capa1 {
-  margin-top: 5%;
+  margin-top: 2%;
   width: 100%;
   height: 100vh;
   display: flex;
