@@ -15,6 +15,7 @@ Este proyecto es una página web simple que muestra una lista de cinco videojueg
 
 - **HTML5**: Para la estructura de la página.
 - **CSS3**: Para el diseño y los estilos visuales.
+- **JavaScript: Para presentar algunas animaciones.
 
 ## Instrucciones de Uso 🚀
 
