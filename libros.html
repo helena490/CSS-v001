@@ -1,75 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./CSS/styles.css" />
-    <title>Elena's lore: books</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elena's lore: books</title>
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header>
+     <!-- Menú de navegación -->
+     <nav class="dropdown-menu">
+      <div class="menu-container">
+        <button class="menu-button">☰ Menú</button>
+        <ul class="dropdown-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="videojuegos.html">Videojuegos</a></li>
+          <li><a href="animes.html">Anime/Mangas</a></li>
+          <li><a href="libros.html">Libros/Novelas</a></li>
+          <li><a href="others.html">Otras actividades</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <body>
-    <header>
-      <!-- Menú de navegación -->
-      <nav class="dropdown-menu">
-        <div class="menu-container">
-          <button class="menu-button">☰ Menú</button>
-          <ul class="dropdown-list">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="videojuegos.html">Videojuegos</a></li>
-            <li><a href="animes.html">Anime/Mangas</a></li>
-            <li><a href="libros.html">Libros/Novelas</a></li>
-            <li><a href="others.html">Otras actividades</a></li>
-          </ul>
-        </div>
-      </nav>
 
-      <h1>Mis lecturas favoritas</h1>
-      <p>
-        Me gusta leer sobre mundos de fantasía y sci-fi, creo que principalmente
-        por mi gusto por el anime y el dibujo. Mis lecturas favoritas son series
-        de libros o novelas, por lo que hacer una lista de mis favoritos
-        definitivos es sencillamente imposible; a continuación muestro una lista
-        de los que actualmente me parecen series emocionantes para una lectura
-        entretenida, hay mucho por imaginar aquí.
-      </p>
-    </header>
+    <h1>Mis lecturas favoritas</h1>
+    <p>  Me gusta leer sobre mundos de fantasía y sci-fi. Mis lecturas favoritas son series
+      completas, por lo que hacer una lista definitiva es sencillamente imposible. Aquí encontrarás algunos ejemplos.</p>
+  </header>
 
-    <main>
-      <section class="libros" id="libro1">
-        <h2>Título</h2>
-        <p>Autor</p>
-        <p>Descripción</p>
-      </section>
+  <main class="slider-container">
+    <button class="nav-button-libros prev-button-libros">&lt;</button>
 
-      <section class="libros" id="libro2">
-        <h2>Título</h2>
-        <p>Autor</p>
-        <p>Descripción</p>
-      </section>
+    <div class="slides">
+      <!-- Cada slide representa un libro -->
+      <div class="slide" id="slide1">
+        <img src="https://m.media-amazon.com/images/I/91i2gD0BWJL._AC_UF1000,1000_QL80_.jpg" alt="Graceling">
+        <h2>Graceling</h2>
+        <p><strong>Autor:</strong> Kristin Cashore</p>
+        <p><strong>Descripción:</strong> Katsa, una joven graceling con el don de matar descubre durante una emocionante y fantástica travesía que quizás malinterpretó su don.</p>
+      </div>
 
-      <section class="libros" id="libro3">
-        <h2>Título</h2>
-        <p>Autor</p>
-        <p>Descripción</p>
-      </section>
+      <div class="slide" id="slide2">
+        <img src="https://store.orbit-books.co.uk/cdn/shop/products/9780356517001-original.jpg?v=1708087557&width=1946" alt="The Eye of the world">
+        <h2>The Eye of the World (The Wheel of Time)</h2>
+        <p><strong>Autor:</strong> Robert Jordan</p>
+        <p><strong>Descripción:</strong> Es la primer entrega de la larga saga de fantasía La Rueda del Tiempo, que narra la historia de varios poderosos personajes y cómo sus destinos están más relacionados de lo que ellos pudieron alguna vez imaginar.</p>
+      </div>
 
-      <section class="libros" id="libro4">
-        <h2>Título</h2>
-        <p>Autor</p>
-        <p>Descripción</p>
-      </section>
+      <div class="slide" id="slide3">
+        <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/96/ea/96ea0d5e34b2520d6939f56906471bec.jpg" alt="Historia de un clon">
+            <h2>Historia de un clon</h2>
+            <p><strong>Autor:</strong> Charlotte Kerner</p>
+            <p><strong>Descripción:</strong> Ambientado en un futuro cercano en el cual la clonación humana es posible, este libro narra los altibajos en las vidas de una pianista con una enfermedad incurable y su clon a quien crió como una hija. </p>
+      </div>
 
-      <section class="libros" id="libro5">
-        <h2>Título</h2>
-        <p>Autor</p>
-        <p>Descripción</p>
-      </section>
-    </main>
-  </body>
+      <div class="slide" id="slide4">
+        <img src="https://m.media-amazon.com/images/I/81cI9woulbL._UF894,1000_QL80_.jpg" alt="Overlord">
+            <h2>Overlord</h2>
+            <p><strong>Autor:</strong> Kugane Maruyama</p>
+            <p><strong>Descripción:</strong> El protagonista queda atrapado en su videojuego favorito, ahora todos los NPC tiene conciencia propia y deberá adecuarse a esta nueva vida siendo uno de los más poderosos del mundo.</p>
+      </div>
+
+      <div class="slide" id="slide5">
+        <img src="https://booksrun.com/blog/wp-content/uploads/2024/06/Game-of-Thrones-Books-Series.png" alt="Juego de tronos">
+            <h2>Juego de tronos (saga de novelas)</h2>
+            <p><strong>Autor:</strong> George R. R. Martin</p>
+            <p><strong>Descripción:</strong> Saga de fantasía que muestra el intrincado entramado de los destinos de cada uno de los protagonistas en su búsqueda de la conquista de los 7 reinos.</p>
+      </div>
+    </div>
+
+    <button class="nav-button-libros next-button-libros">&gt;</button>
+  </main>
+
+  <footer>
+    <p>© 2024 Esta página fue hecha por @helena490.</p>
+  </footer>
+  
+  <!-- diapositivas-->
+  <script src="./script.js"></script>
+</body>
 </html>
