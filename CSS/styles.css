@@ -9,6 +9,11 @@
 body {
   background-color: whitesmoke;
 }
+main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 
 header {
   z-index: 10;
@@ -17,29 +22,26 @@ header {
   background-color: #05122e;
   color: white;
   text-align: center;
-  padding: 30px;
+  padding: 20px 30px;
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
   border-bottom: inset rgba(235, 233, 233, 0.89) 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
+
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  text-align: center;
+  text-align: right;
+  font-size: 0.7rem;
   background-color: #05122e;
   color: white;
-  padding: 10px 0;
-  z-index: 10;
+  padding: 5px;
 }
 
 /* textos */
-.introduccion_mmi {
-  text-align: center;
-  margin: 5% 10%;
-}
 h1 {
   color: white;
 }
@@ -48,8 +50,7 @@ h2 {
   font-size: 1.5rem;
 }
 
-
-p{
+p {
   line-height: 1.5;
 }
 
@@ -193,16 +194,17 @@ a:hover {
 .capa1 {
   margin-top: 2%;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-evenly;
+  row-gap: 20px;
+  justify-content: space-evenly;
   align-items: center;
   gap: 5% 0;
 }
 .capa1 figure {
   position: relative;
-  height: 45vh;
+  height: auto;
   width: 45vw;
   overflow: hidden;
   border-radius: 8px;
@@ -256,7 +258,7 @@ a:hover {
 .slider-container {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   overflow: hidden;
   width: 100%;
@@ -277,7 +279,7 @@ a:hover {
   align-items: center;
   padding: 3% 18%;
   text-align: center;
-  }
+}
 
 .slide img {
   max-width: auto;
@@ -315,44 +317,61 @@ a:hover {
   right: 10px;
 }
 
-/* sección de OTRAS ACTIVIDADES */
 
-/* Portafolio Section */
-.portafolio-container {
-  border: 1px solid #000;
 
-  margin-top: 3vh;
+/*INDEX */
+/* Estilo para la introducción */
+.intro {
+  color: #333;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+
+/* Contenedor principal */
+.main-container {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
-  width: 70%;
+  margin: 2vh 1vw 7vh 1vw;
+  gap: 5px;
+  width: 98%;
   justify-content: center;
-  align-items: center;
 }
 
-
-.portafolio-container article {
-  border: 1px black solid;
-  width: 80%;
-  min-width: 200px;
-  background-color: #7fbdd6;
+/* Sección izquierda */
+.left-section {
+  color: #333;
+  width: 20vw;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 15%;
+  flex-direction: column;
 }
 
-.portafolio-container article:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
+ .left-section img{
+  width: 40px;
+  height: 40px;
+ }
+
+/* Sección derecha */
+.right-section {
+  color: #333;
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 
 /* Media Queries */
-@media (max-width: 768px) {
-  .portafolio-container {
-    flex-direction: column;
-  }
-}
 
 @media (max-width: 600px) {
   .slide img {
