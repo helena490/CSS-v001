@@ -67,6 +67,16 @@ a:hover {
   border-radius: 5px;
 }
 
+.facu {
+  color: rgb(70, 5, 5);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.facu:hover {
+  color: rgb(23, 145, 161);
+  background-color: rgba(122, 98, 98, 0.212);
+}
+
 /* Menú de navegación */
 .dropdown-menu {
   position: absolute;
@@ -133,10 +143,20 @@ a:hover {
 }
 
 /* Juegos */
+.main_juegos {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 8vh;
+  margin-top: 3vh;
+  gap: 10px;
+}
+
 .contenedor {
+  align-content: center;
   width: 80%; /* Ajustar el ancho del contenedor */
   height: 50vh;
-  margin: 5vh auto; /* Centrar el contenedor horizontalmente */
   border-radius: 8px;
   background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
   background-position: center; /* Centra la imagen en el contenedor */
@@ -145,20 +165,21 @@ a:hover {
 }
 
 .texto_descrip {
-  margin: 4% auto;
+  align-content: center;
+  margin: auto;
   color: white; /* Buscar el mejor contraste */
   opacity: 0;
   visibility: hidden;
-  width: 70vw;
-  height: 40vh;
+  width: 90%;
+  height: 90%;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 8px;
   text-align: center;
-  line-height: 1.5;
 }
 
 .texto_descrip h1 {
   font-size: 2rem;
+  margin-bottom: 3vh;
 }
 
 /* Estilos específicos por juego */
@@ -220,7 +241,7 @@ a:hover {
 
 .capa1 figure img {
   width: 100%;
-  height:100%;
+  height: 100%;
   transition: all 0.5s ease-out;
 }
 
@@ -293,7 +314,6 @@ a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 .nav-button-libros {
   position: absolute;
   top: 50%;
@@ -331,16 +351,17 @@ a:hover {
   width: 100%;
 }
 
-.intro h1, h2 {
+.intro h1,
+h2 {
   margin-top: 2vh;
   margin-bottom: 10px;
-  color:#333;
+  color: #333;
   text-align: center;
 }
-.intro p{
-margin: 3vh 0;
-line-height: 1.5;
-text-align: justify;
+.intro p {
+  margin: 3vh 0;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 /* Contenedor principal */
@@ -388,6 +409,9 @@ text-align: justify;
   margin-bottom: 2vh;
   border-radius: 8px;
   padding: 2vh;
+}
+#proyectos img {
+  height: 40px;
 }
 
 /* Media Queries */
@@ -441,7 +465,7 @@ text-align: justify;
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .capa1 figure {
     position: relative;
     width: 80%;
@@ -463,5 +487,4 @@ text-align: justify;
     margin-top: 0;
     font-size: 1.5rem;
   }
-
 }
